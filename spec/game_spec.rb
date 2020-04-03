@@ -6,6 +6,10 @@ describe Game do
   let(:game) { Game.new(player1, player2) }
 
   it "ash will take damage when attacked" do
+    expect(player1).to receive(:damaged)
+    game.attack(player1)
+  end
+  it "brock will take damage when attacked" do
     expect(player2).to receive(:damaged)
     game.attack(player2)
   end
