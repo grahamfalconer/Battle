@@ -1,7 +1,7 @@
 class Player
 
   attr_reader :name, :hp
-  
+
   DEFAULT_HP = 100
 
   def initialize(name)
@@ -18,3 +18,5 @@ class Player
   end
 
 end
+
+player = Player.new("Ash")
